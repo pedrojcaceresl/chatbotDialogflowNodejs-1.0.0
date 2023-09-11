@@ -50,6 +50,7 @@ router.get("/webhook/", function (req, res) {
 //for webhook facebook
 router.post("/webhook/", function (req, res) {
   var data = req.body;
+  console.log("POST REQUEST: ",{data})
   // Make sure this is a page subscription
   if (data.object == "page") {
     // Iterate over each entry
