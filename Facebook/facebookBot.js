@@ -4,6 +4,9 @@ const router = express.Router();
 const request = require("request");
 const uuid = require("uuid");
 const axios = require("axios");
+require("dotenv").config();
+
+
 //files
 const config = require("../config");
 const dialogflow = require("../dialogflow");
