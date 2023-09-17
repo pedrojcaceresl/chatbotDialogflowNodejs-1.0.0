@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
 app.post("/whatsapp", (req, res) => {
   const message = req.body;
   // Do whatever you want with the message
-
+console.log('webhook executedd')
   
 client.messages
 	.create({
